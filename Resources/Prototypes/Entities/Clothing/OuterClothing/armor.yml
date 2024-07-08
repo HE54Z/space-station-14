@@ -100,6 +100,28 @@
       - Energy
 
 - type: entity
+  parent: ClothingOuterArmorBasic
+  id: ClothingOuterSyndicateArmorReflective
+  name: syndicate reflective vest
+  description: A syndicate-manufactured reflective vest, made of quartz composite and insulated against extreme heat.
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Armor/syndi_armor_reflec.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Armor/syndi_armor_reflec.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.7
+        Heat: 0.8
+  - type: Reflect
+    reflectProb: 0.5
+    reflects:
+      - Energy
+
+- type: entity
   parent: ClothingOuterBaseLarge
   id: ClothingOuterArmorCult
   name: acolyte armor
